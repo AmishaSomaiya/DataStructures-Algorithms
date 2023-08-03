@@ -1,5 +1,5 @@
 # DataStructures-Algorithms
-This repo contains 104 solved LeetCode questions (83 medium, 22 easy) solved in Python.
+This repo contains solutions to 104 LeetCode questions (83 medium, 22 easy) solved in Python.
 
 ### File Nomenclature: 
 topic_leetcodenumber_problemname.py
