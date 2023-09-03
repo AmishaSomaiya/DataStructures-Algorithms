@@ -22,7 +22,7 @@ take 1 number, loop on all others and see if this number added to some other num
 -now since sorted, if sum>target, no need to loop till the end, because sorted, the next numbers added will also be > target
 
 
-Time Complexity: 
+Time Complexity: o(n)
 
 """
 
