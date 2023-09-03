@@ -8,10 +8,10 @@ arrays
 input : an array of integers nums and an integer target
 output: indices of the two numbers such that they add up to target
 
-Logic : Hash Table 
+final Logic : Hash Table 
 Simply iterate the array and find the target value among the array in each iteration.
 
-# brute force 
+# solution 1: brute force 
 # target: int, nums: List[int]
 
  for i in range(len(nums)):
