@@ -13,6 +13,7 @@ The tests are generated such that there is exactly one solution.
 You may not use the same element twice.
 Your solution must use only constant extra space.
 
+since we are required to use only constant extra space, we cannot use hashmap like twosum problem. 
 arrays, 2 pointer
 
 Logic : 
