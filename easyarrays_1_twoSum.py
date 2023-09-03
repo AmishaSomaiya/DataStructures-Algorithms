@@ -20,8 +20,13 @@ Simply iterate the array and find the target value among the array in each itera
         if nums[j] == number_to_find:
             return [i, j] # Find indices of the two numbers!
 
-Time Complexity: O(n^2), Space Complexity: O(1)
+Time Complexity for brute force:  O(n^2), Space Complexity: O(1)
 
+solution 2 : using hashmap
+declare empty hashmap with keys as array values and values as array indices
+this is so because we want to search on array values and return array indices
+
+now loop through the array: 
 """
 
 # Hash Table 
