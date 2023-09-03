@@ -27,6 +27,11 @@ declare empty hashmap with keys as array values and values as array indices
 this is so because we want to search on array values and return array indices
 
 now loop through the array: 
+     if target - current value is in hashmap :
+           return indices of current value and target-current value
+     else : 
+           add current value and its index to hashmap
+time and space complexity : both o(n) 
 """
 
 # Hash Table 
