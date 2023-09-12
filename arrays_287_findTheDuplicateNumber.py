@@ -41,13 +41,16 @@ fast pointer beginning of array till end 2 at a time
 they will intersect somewhere 
 find node of intersection
 and find the node where both intersect 
--2nd : take 2nd slow pointer at the beginning of the array 
+-2nd step: take 2nd slow pointer at the beginning of the array 
 and first slow pointer from point of intersection of fast-slow pointers 
 and see if they intersect again : this is the beginning of the cycle = result 
 
 -because as per floyd's : 
 distance of beginning of cycle from intersection of slow-fast
 = distance of beginning of cycle from the start 
+
+so the node where the first slow(from the intersection) and second slow(from the beginning of the array)
+meet = beginning of the cycle = result 
 
 -the pre-portion before the cycle can be really long : can be longer than the cycle itself
 then may require multiple passes thru the cycle from the slowpointer1 in the cycle
@@ -58,7 +61,7 @@ start of the cycle : where multiple nodes point to single node = repeated node
 
 linkedlist problem identified
 now apply floyds algo to find the beginning of the cycle
-Time Complexity: 
+Time Complexity: o(n), s:O(1) only for pointers
 
 """
 
@@ -66,16 +69,16 @@ from typing import List
 
 
 def findDuplicate(nums: List[int]) -> int:
-        # phase 1
-        slow, fast = 0, 0 #always will start at 0, indexes 
+        # step 1
+        slow, fast = 0, 0 #always will start at 0, indexes, but 0 will not be part of cycle because values are from 1 to n
         # and slow and fast will always be in bounds 
-        while True:
+        while True:   #do while loop in python
             slow = nums[slow]
             fast = nums[nums[fast]] #advancing fast twice 
             if slow == fast:  #when intersect: break out of the loop : do while loop 
                 break
 
-        # phase 2
+        # step 2
         slow2 = 0
         while True:
             slow = nums[slow]
