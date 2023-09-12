@@ -35,11 +35,15 @@ so 1 points to position 1, 3 points to position 3 and so on
 -also since the range of values = 1 to n, they will never point to index 0 
 so index 0 will never be part of the cycle 
 
--1st : find the intersection : use fast and slow pointer :
-and the node where both intersect 
--2nd : take 2nd slow pointer at the beginning 
+-1st step : find the intersection : use fast and slow pointer :
+slow pointer from beginning of array till end 1 at a time
+fast pointer beginning of array till end 2 at a time
+they will intersect somewhere 
+find node of intersection
+and find the node where both intersect 
+-2nd : take 2nd slow pointer at the beginning of the array 
 and first slow pointer from point of intersection of fast-slow pointers 
-and see if they intersect again : this is the beginning of the cycle 
+and see if they intersect again : this is the beginning of the cycle = result 
 
 -because as per floyd's : 
 distance of beginning of cycle from intersection of slow-fast
@@ -49,6 +53,11 @@ distance of beginning of cycle from intersection of slow-fast
 then may require multiple passes thru the cycle from the slowpointer1 in the cycle
 to intersect(at the beginning of the cycle) with the slowpointer2 coming from the beginning of the list (the preportion)
 
+start of the cycle : where multiple nodes point to single node = repeated node 
+= beginning of the cycle = node to be returned
+
+linkedlist problem identified
+now apply floyds algo to find the beginning of the cycle
 Time Complexity: 
 
 """
