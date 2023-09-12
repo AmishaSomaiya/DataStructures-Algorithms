@@ -5,8 +5,8 @@ https://www.youtube.com/watch?v=vzdNOK2oB2E&list=PLot-Xpze53lfOdF3KwpMSFEyfE77zI
 leetcode 49
 medium
 
-input : 
-output: 
+input : an array of strings strs
+output: return in any order : group the anagrams together
 
 Logic : 
 approach 1:
