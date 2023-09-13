@@ -35,7 +35,7 @@ reconstruction :
 -from inorder to the left of 20 : 15 is in the left subtree and to the right : 7 : right subtree
 -done when preorder and inorder arrays become empty
 
-Time Complexity: 
+Time Complexity: o(n) and space : o(n)
 
 """
 # Definition for a binary tree node.
