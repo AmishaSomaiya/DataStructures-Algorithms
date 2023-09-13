@@ -29,7 +29,7 @@ reconstruction :
 -remove root from preorder and inorder
 -everything before root in inorder will go into left subtree, after into right subtree
 -repeat recursively 
--since single value 9 in left subtree, done with left
+-since single value 9 in left subtree, since done with left subtree, go to right subtree
 -go back to remaining preorder = [20,15,7] since 3 and then 9 removed
 -again 20 is the root from preorder
 -from inorder to the left of 20 : 15 is in the left subtree and to the right : 7 : right subtree
