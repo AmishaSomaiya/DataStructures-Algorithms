@@ -32,10 +32,10 @@ from collections import defaultdict
 
 
 def groupAnagrams(strs: List[str]) -> List[List[str]]:
-        ans = defaultdict(list) #default value is ist so dont have to deal with edge case separately 
+        ans = defaultdict(list) #default value is list so dont have to deal with edge case separately 
 
         for s in strs:
-            count = [0] * 26  #count is a list, but lists cannot have keys so change to tuple
+            count = [0] * 26  #count is a list, but lists cannot be keys so change to tuple
             for c in s:
                 count[ord(c) - ord("a")] += 1
             ans[tuple(count)].append(s)
