@@ -5,7 +5,8 @@ https://www.youtube.com/watch?v=ihj4IQGZ2zc&list=PLot-Xpze53lfOdF3KwpMSFEyfE77zI
 leetcode 105
 medium
 
-input : two integer arrays preorder and inorder where preorder is the preorder traversal of a binary tree and inorder is the inorder traversal of the same tree
+input : two integer arrays preorder and inorder where preorder is the preorder traversal of 
+a binary tree and inorder is the inorder traversal of the same tree
 output: construct and return the binary tree.
 
 Logic : 
