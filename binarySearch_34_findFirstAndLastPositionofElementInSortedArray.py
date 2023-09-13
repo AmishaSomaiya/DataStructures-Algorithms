@@ -17,7 +17,7 @@ linear search and return 1st and last index of target value : o(n)
 approach 2 : o(logn)
 binary search
 left and right pointer, compute middle value,
-if middle<target, look into right portion of array
+if middle<target, look into right portion of array (not rotated)
 i.e. update left = middle+1, right as it is
 recompute middle
 now we want the leftmost and rightmost target values 
