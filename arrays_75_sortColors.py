@@ -21,7 +21,8 @@ Time Complexity: O(n), Space Complexity: O(1)
 def sortColors(nums):
         low = 0
         high = len(nums) - 1
-        mid = 0
+        mid = 0  #mid is the third pointer that iterates through the entire array so the 
+        #condition is mid <= high for the while loop 
 
         while mid <= high:
             if nums[mid] == 0:
