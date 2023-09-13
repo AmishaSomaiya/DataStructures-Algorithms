@@ -17,8 +17,8 @@ Logic :
 9          20
         15    7
 
--preorder : root - left - right : [3,9,20,15,7]
--inorder  : left - root - right : [9,3,15,20,7]
+-preorder : root - left subtree - right subtree : [3,9,20,15,7]
+-inorder  : left subtree - root - right subtree : [9,3,15,20,7]
 
 reconstruction :
 - 1st value of preorder = root -> from preorder
