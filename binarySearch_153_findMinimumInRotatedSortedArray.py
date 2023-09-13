@@ -5,8 +5,9 @@ https://www.youtube.com/watch?v=nIVW4P8b1VA&list=PLot-Xpze53lfOdF3KwpMSFEyfE77zI
 leetcode 153
 medium
 
-input : 
-output: 
+input : an array of length n sorted in ascending order rotated between 1 and n times.
+Given the sorted rotated array nums of unique elements.
+output: minimum element of this array.
 
 Logic : 
 given array is sorted in ascending order but can be rotated 1 to n and given
