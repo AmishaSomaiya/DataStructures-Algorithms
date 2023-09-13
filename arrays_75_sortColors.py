@@ -14,6 +14,7 @@ Use three pointers to perform in-place sorting. If nums[mid] is 0, meaning that 
 to make the array sorted. Another case is that if we encounter 2 in nums[mid], we know that we should swap nusmms[right] and nums[mid] 
 to keep the array sorted. By doing so, the array will be sorted in O(n) time after iterating the whole array (worst case).
 
+bucket sort 
 Time Complexity: O(n), Space Complexity: O(1)
 
 """
