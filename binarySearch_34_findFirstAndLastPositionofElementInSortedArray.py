@@ -28,11 +28,25 @@ when left=right pointer and no more values to the right of it and right most val
 then this = rightmost target value
 
 for leftmost target value :
+method 1:
 restart binary search 
 init pointers again , compute mid, update pointers, recompute mid
 now to find leftmost value, now left as it is, right = mid - 1
+Time Complexity: o(logn) twice = still o(logn) 
 
-Time Complexity: o(logn) twice = still o(logn)
+for leftmost target value :
+method 2:
+once the rightmost target value found, no need to restart binary search,
+just go to the left by 1, keep moving till value no longer=target
+this works since array is sorted
+return index of the leftmost value = target 
+but this method will have worse time complexity = o(n), so
+overall time complexity becomes o(logn) + o(n) = o(n) 
+hence for better computation, go for method 1 instead of method 2.
+
+
+
+
 
 """
 
