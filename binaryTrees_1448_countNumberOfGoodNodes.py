@@ -11,7 +11,7 @@ if in the path from root to X there are no nodes with a value greater than X.
 output: Return the number of good nodes in the binary tree.
 
 Logic : 
-approach 1 : o(n) linear time and space : o(logn) = o(height of tree)
+approach : o(n) linear time and space : o(logn) = o(height of tree)
 
 pre-order traversal :
 dfs recursively on root-left subtree-right subtree 
