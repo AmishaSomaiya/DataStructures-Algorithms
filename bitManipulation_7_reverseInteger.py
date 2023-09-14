@@ -43,16 +43,17 @@ def reverse(x: int) -> int:
         MAX = 2147483647  #  2^31 - 1
 
         res = 0
-        while x:
+        while x:  #i.e. while integer x is not zero, continue the while loop
             digit = int(math.fmod(x, 10))  # (mod operation in python),  -1 %  10 = 9
-            x = int(x / 10)  # (python integer division, rounds down) -1 // 10 = -1
+            x = int(x / 10)  # (python integer division, casting rounds down) -1 // 10 = -1
 
-            if res > MAX // 10 or (res == MAX // 10 and digit > MAX % 10):
+            #comparing for overflow 
+            if res > MAX // 10 or (res == MAX // 10 and digit > MAX % 10): #last and condition : 7
                 return 0
-            if res < MIN // 10 or (res == MIN // 10 and digit < MIN % 10):
+            if res < MIN // 10 or (res == MIN // 10 and digit < MIN % 10):  #last and condition : 8
                 return 0
             res = (res * 10) + digit
-
+        #return result if it does not overflow 
         return res
 
 print(reverse(123))
