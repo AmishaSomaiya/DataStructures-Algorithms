@@ -5,7 +5,7 @@ https://www.youtube.com/watch?v=HAgLH58IgJQ&list=PLot-Xpze53lfQmTEztbgdp8ALEoydv
 leetcode 7
 medium
 bit manipulation 
-pending 
+
 
 input :  a signed 32-bit integer x
 output: return x with its digits reversed. 
@@ -14,9 +14,19 @@ then return 0.
 Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
 
 Logic : 
+use integer division and mod operators to extract digit by digit from the original number
+and then to revere it, multiply extracted digit by 10 to shift by 1 position to the left and 
+add the new extracted integer.
+repeat till input integer is != 0
+
+to handle the edge case : i.e. to not go out of bounds :
+compare the newly formed number with the 32-bit int min and max values (it 1 less digit) 
+and if it exceeds, return 0
+if it is same, check last digit, if it exceeds return 0
 
 
-Time Complexity: 
+
+Time Complexity: o(log|x|) space : o(1) 
 
 """
 
