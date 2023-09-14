@@ -3,12 +3,14 @@ https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
 https://www.youtube.com/watch?v=gs2LMfuOR9k&list=PLot-Xpze53lfQmTEztbgdp8ALEoydvnRQ&index=18
 
 leetcode 235
-medium
+easy
 
-input : a binary search tree (BST)
+input : a binary search tree (BST) root and 2 nodes 
 output: find the lowest common ancestor (LCA) node of two given nodes in the BST.
 
 Logic : 
+LCA of p and q means either p and q are descendents of this LCA node or it itself is p or q
+and other node is descendent of it
 
 
 Time Complexity: 
