@@ -26,7 +26,7 @@ if it is same, check last digit, if it exceeds return 0
 
 
 
-Time Complexity: o(log|x|) space : o(1) 
+Time Complexity: o(log|x|) space : o(1)  
 
 """
 
