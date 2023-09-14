@@ -44,8 +44,8 @@ def reverse(x: int) -> int:
 
         res = 0
         while x:
-            digit = int(math.fmod(x, 10))  # (python dumb) -1 %  10 = 9
-            x = int(x / 10)  # (python dumb) -1 // 10 = -1
+            digit = int(math.fmod(x, 10))  # (mod operation in python),  -1 %  10 = 9
+            x = int(x / 10)  # (python integer division, rounds down) -1 // 10 = -1
 
             if res > MAX // 10 or (res == MAX // 10 and digit > MAX % 10):
                 return 0
