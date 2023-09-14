@@ -2,7 +2,7 @@
 https://leetcode.com/problems/reverse-integer/
 https://www.youtube.com/watch?v=HAgLH58IgJQ&list=PLot-Xpze53lfQmTEztbgdp8ALEoydvnRQ&index=17
 
-leetcode 7
+leetcode 7 
 medium
 bit manipulation 
 
