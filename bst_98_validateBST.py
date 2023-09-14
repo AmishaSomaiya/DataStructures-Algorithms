@@ -50,8 +50,8 @@ updated boundary check : 5<4<7 NOT MET : RETURN FALSE
 
 SO UPDATED BOUNDARY CHECKS :
 AT ROOT :     -inf<root<inf eg: -inf<5<inf
-at left :     node.left<newleft<node.val  eg. -inf<3<5
-ar right :    node.val < newright < node.right  eg. 5<7<inf
+at left :     left<node.left<node.val  eg. -inf<3<5
+ar right :    node.val < node.right < right  eg. 5<7<inf
 
 i.e. 
 return valid(node.left, left, node.val) and valid(
