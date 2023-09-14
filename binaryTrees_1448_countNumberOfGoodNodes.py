@@ -24,7 +24,7 @@ check if it is good, ie >= greatest value tracked till now on this path
 if yes then add to #good nodes 
 continue recursively till end i.e. till all nodes are done 
 
-Time Complexity: 
+Time Complexity: o(n) linear time and space : o(logn) = o(height of tree)
 
 """
 
