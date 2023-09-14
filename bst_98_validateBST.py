@@ -2,7 +2,7 @@
 https://leetcode.com/problems/validate-binary-search-tree/
 https://www.youtube.com/watch?v=s6ATEkipzow&list=PLot-Xpze53lfOdF3KwpMSFEyfE77zIwiP&index=26
 
-leetcode 98
+leetcode 98 
 medium
 recursive dfs 
 
