@@ -9,9 +9,13 @@ input : a binary search tree (BST) root and 2 nodes
 output: find the lowest common ancestor (LCA) node of two given nodes in the BST.
 
 Logic : 
-LCA of p and q means either p and q are descendents of this LCA node or it itself is p or q
+-LCA of p and q means either p and q are descendents of this LCA node or it itself is p or q
 and other node is descendent of it
-
+-begin from root, because it is common ancestor for all nodes, not necesssarily LCA but CA
+-eg. 1: 2<(root=6) so goes into left subtree
+8>root so goes into right subtree
+so in this specific eg., since p=2 is in left subtree and q=8 is in right subtree, there is no common 
+node other than the root.  
 
 Time Complexity: 
 
