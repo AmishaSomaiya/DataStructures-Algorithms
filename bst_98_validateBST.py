@@ -22,15 +22,39 @@ check root > every value in left and < every value in right
 : needs n comparisons for every node -> O(n^2)
 
 approach2  : recursive dfs : O(2n) = O(n)
-- root can be anything between -inf and +inf
+- root can be anything between -inf and +inf, since it does nt have a parent
+so left<root<right but root can be anything between left and right 
 -so no need to compare root with anything
 -now in left subtree : is -inf < left node < root
 -now for right : is root < right < inf
 - i.e. not just 1 comparison, update other side bound also updated using -inf or inf
 - so for right our condition is root < right < inf
 - this should be met for all right
--5(root) < 4(right) < 7(root of right)-> this condition si not met as 5!<4
+-5(root) < 4(right) < 7(root of right)-> this condition is not met as 5!<4
 -so return false. 
+
+so only checking root of individual subtrees with their respective left and right subtrees 
+is not sufficient so we need dfs
+
+-we are adding additional boundary check of -inf and +inf to our left<root<right condition check
+-eg : 
+    5
+3        7
+        4  8
+-first at the root=5 : -inf<5<inf : met
+-next go the left subtree=3 : updated boundary check : -inf<3<5 : met
+-now go to right: first the root of right subtree=7 :
+updated boundary check : 5<7<inf : met
+-go down to left node of right subtree=4 : 
+updated boundary check : 5<4<7 NOT MET : RETURN FALSE
+
+SO UPDATED BOUNDARY CHECKS :
+AT ROOT :     -inf<root<inf
+at left :     node.left<newleft<node.val
+ar right :    root/curr < node < right 
+
+
+
 Time Complexity: O(n)
 """
 
@@ -46,7 +70,7 @@ class Solution:
             if not node:
                 return True  #empty BST = BST so return true 
             if not (left < node.val < right):  #node broke the BST rule so return false 
-                return False
+                return False ##explanation above 
 
             # recursively call dfs down : 
             # parameters to check if left subtree is valid : now we want to check if left node of node is valid for bst
