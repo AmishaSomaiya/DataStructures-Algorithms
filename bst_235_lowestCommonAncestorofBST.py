@@ -15,7 +15,7 @@ and other node is descendent of it
 -eg. 1: 2<(root=6) so goes into left subtree
 8>root so goes into right subtree
 so in this specific eg., since p=2 is in left subtree and q=8 is in right subtree, there is no common 
-node other than the root.  
+node other than the root.   
 
 Time Complexity: 
 
