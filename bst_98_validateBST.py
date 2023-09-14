@@ -5,7 +5,7 @@ https://www.youtube.com/watch?v=s6ATEkipzow&list=PLot-Xpze53lfOdF3KwpMSFEyfE77zI
 leetcode 98 
 medium
 recursive dfs 
-
+ 
 input : Given the root of a binary tree
 output: determine if it is a valid binary search tree (BST)
 
