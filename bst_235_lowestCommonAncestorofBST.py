@@ -2,7 +2,7 @@
 https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/   
 https://www.youtube.com/watch?v=gs2LMfuOR9k&list=PLot-Xpze53lfQmTEztbgdp8ALEoydvnRQ&index=18
 
-leetcode 235
+leetcode 235 
 easy
 
 input : a binary search tree (BST) root and 2 nodes 
