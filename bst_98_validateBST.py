@@ -4,7 +4,7 @@ https://www.youtube.com/watch?v=s6ATEkipzow&list=PLot-Xpze53lfOdF3KwpMSFEyfE77zI
 
 leetcode 98
 medium
-recursive dfs
+recursive dfs 
 
 input : Given the root of a binary tree
 output: determine if it is a valid binary search tree (BST)
@@ -49,11 +49,13 @@ updated boundary check : 5<7<inf : met
 updated boundary check : 5<4<7 NOT MET : RETURN FALSE
 
 SO UPDATED BOUNDARY CHECKS :
-AT ROOT :     -inf<root<inf
-at left :     node.left<newleft<node.val
-ar right :    root/curr < node < right 
+AT ROOT :     -inf<root<inf eg: -inf<5<inf
+at left :     node.left<newleft<node.val  eg. -inf<3<5
+ar right :    node.val < newright < node.right  eg. 5<7<inf
 
-
+i.e. 
+return valid(node.left, left, node.val) and valid(
+                node.right, node.val, right
 
 Time Complexity: O(n)
 """
