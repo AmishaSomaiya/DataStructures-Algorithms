@@ -4,7 +4,7 @@ https://www.youtube.com/watch?v=EaphyqKU4PQ&list=PLot-Xpze53lfOdF3KwpMSFEyfE77zI
 
 leetcode 743
 medium
-djikstra's
+djikstra's 
 
 input : a network of n nodes, labeled from 1 to n and  also given times, a list of travel times as
 directed edges times[i] = (ui, vi, wi), where ui is the source node, vi is the target node, and wi 
