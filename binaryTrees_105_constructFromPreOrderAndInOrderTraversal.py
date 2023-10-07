@@ -5,7 +5,8 @@ https://www.youtube.com/watch?v=ihj4IQGZ2zc&list=PLot-Xpze53lfOdF3KwpMSFEyfE77zI
 leetcode 105
 medium
 
-input : two integer arrays preorder and inorder where preorder is the preorder traversal of a binary tree and inorder is the inorder traversal of the same tree
+input : two integer arrays preorder and inorder where preorder is the preorder traversal of 
+a binary tree and inorder is the inorder traversal of the same tree
 output: construct and return the binary tree.
 
 Logic : 
@@ -16,8 +17,8 @@ Logic :
 9          20
         15    7
 
--preorder : root - left - right : [3,9,20,15,7]
--inorder  : left - root - right : [9,3,15,20,7]
+-preorder : root - left subtree - right subtree : [3,9,20,15,7]
+-inorder  : left subtree - root - right subtree : [9,3,15,20,7]
 
 reconstruction :
 - 1st value of preorder = root -> from preorder
@@ -28,16 +29,16 @@ reconstruction :
 -remove root from preorder and inorder
 -everything before root in inorder will go into left subtree, after into right subtree
 -repeat recursively 
--since single value 9 in left subtree, done with left
+-since single value 9 in left subtree, since done with left subtree, go to right subtree
 -go back to remaining preorder = [20,15,7] since 3 and then 9 removed
 -again 20 is the root from preorder
 -from inorder to the left of 20 : 15 is in the left subtree and to the right : 7 : right subtree
 -done when preorder and inorder arrays become empty
 
-Time Complexity: 
+Time Complexity: o(n) and space : o(n)
 
 """
-# Definition for a binary tree node.
+# Definition for a binary tree node. 
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val

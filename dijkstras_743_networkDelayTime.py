@@ -4,17 +4,41 @@ https://www.youtube.com/watch?v=EaphyqKU4PQ&list=PLot-Xpze53lfOdF3KwpMSFEyfE77zI
 
 leetcode 743
 medium
-dijkstra's
+djikstra's 
 
-input : 
-output: 
+input : a network of n nodes, labeled from 1 to n and  also given times, a list of travel times as
+directed edges times[i] = (ui, vi, wi), where ui is the source node, vi is the target node, and wi 
+is the time it takes for a signal to travel from source to target.
 
-Logic : 
+output: minimum time it takes for all the n nodes to receive the signal. 
+
+Logic : to find min time=edges i.e. to find shortest path = dijkstra's algo
+= performs BFS = implemented in code using min heap = priority queue
+
+djik algo :
+graph algo
+- for every node, finds shortest path from source node
+-shortest path = min total weight and not min num of nodes passed
+to reach the destination
+-so each node being visited add to heap
+
+in min heap : track 2 values : path length, since it is used to determine what to pop
+based on path length 
+2nd value : node being reached
+start iwith 0,1 in the ex
+step 2 : pop this value
+step3 " do bfs, add neighbor to min heap
+step 4 : add more neighbor 
+..
+max value = 3 in eg = to be returnrf
+
+
 
 
 Time Complexity: O(E * logV)
+to get min from min heap :logn operation
 
-expl todo
+
 """
 
 from collections import defaultdict

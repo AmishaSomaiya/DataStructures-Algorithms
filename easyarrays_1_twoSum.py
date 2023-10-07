@@ -8,10 +8,10 @@ arrays
 input : an array of integers nums and an integer target
 output: indices of the two numbers such that they add up to target
 
-Logic : Hash Table 
+final Logic : Hash Table 
 Simply iterate the array and find the target value among the array in each iteration.
 
-# brute force 
+# solution 1: brute force 
 # target: int, nums: List[int]
 
  for i in range(len(nums)):
@@ -20,8 +20,18 @@ Simply iterate the array and find the target value among the array in each itera
         if nums[j] == number_to_find:
             return [i, j] # Find indices of the two numbers!
 
-Time Complexity: O(n^2), Space Complexity: O(1)
+Time Complexity for brute force:  O(n^2), Space Complexity: O(1)
 
+solution 2 : using hashmap
+declare empty hashmap with keys as array values and values as array indices
+this is so because we want to search on array values and return array indices
+
+now loop through the array: 
+     if target - current value is in hashmap :
+           return indices of current value and target-current value
+     else : 
+           add current value and its index to hashmap
+time and space complexity : both o(n) 
 """
 
 # Hash Table 

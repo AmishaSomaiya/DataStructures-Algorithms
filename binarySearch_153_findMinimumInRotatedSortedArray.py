@@ -5,12 +5,18 @@ https://www.youtube.com/watch?v=nIVW4P8b1VA&list=PLot-Xpze53lfOdF3KwpMSFEyfE77zI
 leetcode 153
 medium
 
-input : 
-output: 
+input : an array of length n sorted in ascending order rotated between 1 and n times.
+Given the sorted rotated array nums of unique elements.
+output: minimum element of this array.
 
 Logic : 
+approach1 : 
+linear time soln : trverse thru the array and find the min value and return it
+but logn time soln required
+
+approach2 : 
 given array is sorted in ascending order but can be rotated 1 to n and given
-rotation means to take   
+rotation k times means to take the last k elems and put these in front of the remaining n-k elements
 
 to do in logn time : use binary search 
 -if sorted array rotated n times:
@@ -19,25 +25,16 @@ to do in logn time : use binary search
 -but can also take middle as pivot 
 now where to search : in left portion of the array or right portion 
 : whatever is in the left portion is > whatever in right portion because sorted and rotated
-since when rotated : we are putting the large values and putting it ahead
+since when rotated : we are putting the large values ahead of the smaller values
 so on the right are going to be smaller
 
-so algo for rotated sorted array : works only for rotated sorted
+so this algo for rotated sorted array : i.e. works only for rotated sorted
 
- 
+where to search :  
 if pivot is in the left sorted portion i.e nums[m] >= nums[L]-> search right
 else search left
 
-
-
-
-
-
-approach : 
-linear time soln : trverse thru the array and find the min value and return it
-but logn time soln required
-
-Time Complexity: 
+Time Complexity: o(logn)
 
 """
 from typing import List

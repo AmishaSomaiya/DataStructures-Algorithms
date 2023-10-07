@@ -13,6 +13,7 @@ The tests are generated such that there is exactly one solution.
 You may not use the same element twice.
 Your solution must use only constant extra space.
 
+since we are required to use only constant extra space, we cannot use hashmap like twosum problem. 
 arrays, 2 pointer
 
 Logic : 
@@ -22,7 +23,7 @@ take 1 number, loop on all others and see if this number added to some other num
 -now since sorted, if sum>target, no need to loop till the end, because sorted, the next numbers added will also be > target
 
 
-Time Complexity: 
+Time Complexity: o(n)
 
 """
 

@@ -1,5 +1,5 @@
 # DataStructures-Algorithms
-This repo contains 104 solved LeetCode questions (83 medium, 22 easy) solved in Python.
+This repo contains solutions to 104 LeetCode questions (83 medium, 22 easy) solved in Python.
 
 ### File Nomenclature: 
 topic_leetcodenumber_problemname.py
@@ -12,7 +12,7 @@ topic_leetcodenumber_problemname.py
 - code implementation of most efficient approach
 - code test cases
 
-Topics include :
+### Topics include :
 1. Dynamic Programming
 2. Graphs
 3. Sliding Window Technique
@@ -28,9 +28,3 @@ Topics include :
 13. Arrays, LinkedList, HashTables, Strings, Trees, Tries
 
 
-
-
-
-
-Each py file contains :
-- 
