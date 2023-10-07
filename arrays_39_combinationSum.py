@@ -1,5 +1,6 @@
 """
 https://leetcode.com/problems/combination-sum/
+https://la60312.medium.com/leetcode-39-combination-sum-79df7114879a#:~:text=LeetCode%20%2339%2C%20Combination%20Sum%2C,combination%20equals%20to%20the%20target.
 
 leetcode 
 medium
@@ -10,7 +11,7 @@ output: a list of all unique combinations of candidates where the chosen numbers
 sum to target
 
 Explanation: The algorithm is simple; just use backtracking techniques. 
-Noted that we use variable index to avoid duplicated combination. So, whenever index becomes 
+Note that we use variable index to avoid duplicated combination. So, whenever index becomes 
 larger, we cannot choose number before the index element in candidates array.
 
 Time Complexity: O(2^k), where k is the number of tree nodes of the recursion tree. 
