@@ -6,14 +6,14 @@ easy
 iterative approach
 
 input :  an array of integers nums which is sorted in ascending order, and an integer target
-output: 
-
-Logic : write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
+output: write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
 
 You must write an algorithm with O(log n) runtime complexity.
 
+Logic : use iterative approach and avoid overflow while calculating mid
 
-Time Complexity: o(logn)
+
+Time Complexity: o(logn) since array divided by 2 at each step
 
 """
 
