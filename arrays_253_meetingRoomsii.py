@@ -95,3 +95,4 @@ def minMeetingRooms(intervals: List[List[int]]) -> int:
         return max_count
 
 print(minMeetingRooms([(0,30), (5,10), (15,20)]))
+# answer 2
