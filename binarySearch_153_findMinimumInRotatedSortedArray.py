@@ -38,25 +38,35 @@ Time Complexity: o(logn)
 
 """
 from typing import List
+class Solution:
+    def findMin(self, nums: List[int]) -> int:
+        # sorted (even though rotated) and need in o(logn) tine so use binary search
 
+        l=0
+        r=len(nums)-1
+        currmin = float("inf")
 
-def findMin(nums: List[int]) -> int:
-        start , end = 0 ,len(nums) - 1   #start and end pointers 
-        curr_min = float("inf")  #init as inf
+        while(l<r):
+            mid = (l+r)//2
+            currmin = min(currmin, nums[mid])
+            if nums[mid]>nums[r]: #right portion
+                l=mid+1
+            else : #left portion
+                r=mid-1
+
+        # if time exceeded, check 1)pointers updated inside loop
         
-        while start  <  end :   #continue binary search till valid i.e. start < end 
-            mid = (start + end ) // 2  
-            curr_min = min(curr_min,nums[mid])
-            
-            # right has the min 
-            if nums[mid] > nums[end]:
-                start = mid + 1
-                
-            # left has the  min 
-            else:
-                end = mid - 1 
-                
-        return min(curr_min,nums[start])  
+        # if incorrect answer, 1)check if default return after and outside loop 
+        # 2)condition of loop l<r or l<=r
+
+        '''
+        bin search flow:
+        if target = nums[mid]: return mid
+        if target>nums[mid]: (left portion) l=mid+1
+        else (target < nums[mid] i.e. right portion) r=mid-1
+        '''           
+        
+        return min(currmin, nums[l])
 
 print(findMin([3,4,5,1,2]))
 print(findMin([4,5,6,7,0,1,2]))
