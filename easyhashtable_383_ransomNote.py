@@ -14,18 +14,20 @@ of ransomNote and m is the length of magazine.
 """
 from collections import defaultdict
 
-def canConstruct(ransomNote, magazine):
-    memo = defaultdict(int)
-    for char in magazine:
-        memo[char] +=1
+class Solution:
+    def canConstruct(self, ransomNote: str, magazine: str) -> bool:
 
-    for char in ransomNote:
-        if memo[char]==0:
-            return False
-        
-        memo[char]-=1
+        newdict = defaultdict(int)  #remember this should be default dict to avoid handling edge cases of 0 count and not just newdict = {}
 
-    return True
+        for i in magazine :
+            newdict[i] +=1 
+
+        for i in ransomNote :
+            if newdict[i] == 0:
+                return False
+            newdict[i]-=1  #remember to decrement count whenever char encountered in ransomNote 
+            
+        return True 
 
 
 print(canConstruct("a","b"))
