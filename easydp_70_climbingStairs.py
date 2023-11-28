@@ -10,8 +10,6 @@ output: In how many distinct ways can you climb to the top?
 
 dynamic programming
 
-Logic : 
-
 
 Time Complexity: o(n) 
 
