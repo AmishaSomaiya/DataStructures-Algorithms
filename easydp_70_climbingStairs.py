@@ -13,24 +13,25 @@ dynamic programming
 Logic : 
 
 
-Time Complexity: 
+Time Complexity: o(n) 
 
 """
 
-def climbStairs(n):
-        """
-        :type n: int
-        :rtype: int
-        """
-        if n <= 3:
-            return n
-        n1, n2 = 2, 3
+class Solution:
+    def climbStairs(self, n: int) -> int:
 
-        for i in range(4, n + 1):
-            temp = n1 + n2
+        if n<=3:
+            return n
+
+        n1 = 2
+        n2 = 3
+
+        for i in range(4,n+1): #remember till n+1 
+            temp = n1+n2
             n1 = n2
             n2 = temp
-        return n2
+
+        return n2 #this is n2 and not temp
 
 print(climbStairs(2))
 print(climbStairs(3))
